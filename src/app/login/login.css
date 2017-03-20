@@ -1,0 +1,33 @@
+.loginLayout
+{
+	width: 500px;
+	margin: auto;
+	margin-top: 110px;
+	text-align: center;
+	padding-bottom: 20px;
+	box-shadow: 1px 1px 15px #555;
+	position: relative;
+}
+
+#toolBarlogin
+{
+	margin-bottom: 20px;
+}
+
+.loginLayout input
+{
+	width: 220px;
+	text-align: center;
+}
+
+#buttonlogIn
+{
+	margin-top: 20px;
+}
+
+#loading
+{
+	margin: auto;
+	margin-top: 10px;
+	width: 50px;
+}

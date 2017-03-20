@@ -1,0 +1,35 @@
+<div class="loginLayout">
+	<md-toolbar id="toolBarlogin" color="primary">
+  		<md-icon style="margin-right: 10px;">https</md-icon><span>GTS Admin - LogIn</span>
+	</md-toolbar>
+	<div id='inputPseudo'>
+		<md-input-container>
+			<input mdInput
+	  			[(ngModel)]="pseudo"
+	  			type="text"
+	  			placeholder="Pseudo"
+	  		/>
+	  	</md-input-container>
+  	</div>
+  	<div id='inputPass'>
+  		<md-input-container>
+			<input mdInput
+	  			[(ngModel)]="pass"
+	  			type="password"
+	  			placeholder="Password"
+	  		/>
+  		</md-input-container>
+  	</div>
+  	<div id='inputToken'>
+  		<md-input-container>
+			<input mdInput
+	  			[(ngModel)]="token"
+	  			type="text"
+	  			placeholder="Token"
+	  		/>
+  		</md-input-container>
+  	</div>
+  	<button *ngIf="!loading" md-raised-button color='primary' id="buttonlogIn" (click)="onClickLogIn()"><md-icon>done</md-icon></button>
+  	<md-spinner id="loading" *ngIf="loading"></md-spinner>
+</div>
+

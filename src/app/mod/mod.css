@@ -1,0 +1,12 @@
+.layout
+{
+	width: 900px;
+	max-width: 900px;
+	margin: auto;
+	text-align: center;
+	padding-bottom: 50px;
+	box-shadow: 1px 1px 15px #555;
+	position: relative;
+	min-height: 500px;
+}
+

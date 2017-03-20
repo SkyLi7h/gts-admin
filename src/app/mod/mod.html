@@ -1,0 +1,39 @@
+<div class="layout">
+
+	<md-toolbar id="clustersWelcome" color="primary">
+		<button md-icon-button [mdMenuTriggerFor]="menu">
+		 	<md-icon>more_vert</md-icon>
+		</button>
+		<md-menu #menu="mdMenu">
+		  <button routerLink="/mod/clusters" md-menu-item>
+		    <md-icon>desktop_windows</md-icon>
+		    <span>Clusters</span>
+		  </button>
+		  <button routerLink="/mod/configuration" md-menu-item>
+		    <md-icon>build</md-icon>
+		    <span>Configuration</span>
+		  </button>
+		  <button routerLink="/mod/transport" md-menu-item>
+		    <md-icon>local_shipping</md-icon>
+		    <span>Transports</span>
+		  </button>
+		  <button routerLink="/mod/channel" md-menu-item>
+		    <md-icon>settings_input_component</md-icon>
+		    <span>Channels</span>
+		  </button>
+		  <button routerLink="/mod/audit" md-menu-item>
+		    <md-icon>person_pin</md-icon>
+		    <span>Audit</span>
+		  </button>
+		  <button (click)="logOut()" md-menu-item>
+		    <md-icon>highlight_off</md-icon>
+		    <span>Log off</span>
+		  </button>
+		</md-menu>
+  		<md-icon style="margin-left: 30px;margin-right: 10px;">person_pin</md-icon><span>GTS Admin</span>
+	</md-toolbar>
+	
+	<router-outlet></router-outlet>
+	
+</div>
+
